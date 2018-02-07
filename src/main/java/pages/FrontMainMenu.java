@@ -24,4 +24,8 @@ public class FrontMainMenu extends BaseClass {
         menuItem1.findElement(By.xpath("//div[@role = 'navigation']/a[text() = '"+menuName1+"']")).click();
     }
 
+    public FrontMainMenu(){
+        PageFactory.initElements(BaseClass.driver, this);
+    }
+
 }

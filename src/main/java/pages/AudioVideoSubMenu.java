@@ -19,4 +19,8 @@ public class AudioVideoSubMenu extends BaseClass {
      public void selectMenu3 (String menuName3) {
          TVmenu.findElement(By.xpath("(//a[text() = '" + menuName3 + "'])[2]")).click();
      }
+
+     public AudioVideoSubMenu(){
+        PageFactory.initElements(BaseClass.driver, this);
+     }
 }

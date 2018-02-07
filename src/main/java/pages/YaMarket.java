@@ -19,4 +19,8 @@ public class YaMarket extends BaseClass {
     public void selectMenu2(String menuName2){
         marketMenu.findElement(By.xpath("(//a[text() = '"+menuName2+"'])[1]")).click();
     }
+
+    public YaMarket(){
+        PageFactory.initElements(BaseClass.driver, this);
+    }
 }

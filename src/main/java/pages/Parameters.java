@@ -41,4 +41,8 @@ public class Parameters extends BaseClass {
     }
 
 
+    public Parameters (){
+        PageFactory.initElements(BaseClass.driver, this);
+    }
+
 }
