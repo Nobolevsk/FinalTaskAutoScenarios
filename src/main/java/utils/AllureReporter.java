@@ -4,7 +4,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import ru.yandex.qatools.allure.annotations.Attachment;
 
-import static steps.BaseSteps.driver;
+import static steps.BaseStepsTest.driver;
 
 public class AllureReporter extends ru.yandex.qatools.allure.cucumberjvm.AllureReporter {
 

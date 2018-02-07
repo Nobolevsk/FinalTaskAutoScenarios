@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Wait;
+import steps.FrontMainMenuSteps;
 
 import javax.swing.*;
 
@@ -17,7 +18,7 @@ public class FrontMainMenu extends BaseClass {
 
     public FrontMainMenu(WebDriver driver){
         PageFactory.initElements(driver, this);
-        //this.driver = driver;
+        this.driver = driver;
     }
 
     public void selectMenu1(String menuName1){
@@ -25,7 +26,7 @@ public class FrontMainMenu extends BaseClass {
     }
 
     public FrontMainMenu(){
-        PageFactory.initElements(BaseClass.driver, this);
+        PageFactory.initElements(FrontMainMenuSteps.getDriver(), this);
     }
 
 }

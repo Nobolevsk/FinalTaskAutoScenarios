@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import steps.BaseStepsTest;
+import steps.YaMarketSteps;
 
 public class YaMarket extends BaseClass {
 
@@ -21,6 +23,6 @@ public class YaMarket extends BaseClass {
     }
 
     public YaMarket(){
-        PageFactory.initElements(BaseClass.driver, this);
+        PageFactory.initElements(YaMarketSteps.getDriver(), this);
     }
 }

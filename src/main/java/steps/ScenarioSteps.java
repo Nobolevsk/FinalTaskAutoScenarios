@@ -12,24 +12,24 @@ public class ScenarioSteps {
 
 
     @When("^Нажимаем на кнопку \"(.*)\"$")
-    public void MenuStep(String first){
-        mainMenuSteps.Market(first);
+    public void menuStep(String first){
+        mainMenuSteps.market(first);
     }
     @Then("^Кликаем на сабменю\"(.*)\"$")
-    public void MarketStep(String second){
-        yaMarketSteps.Electronika(second);
+    public void marketStep(String second){
+        yaMarketSteps.electronika(second);
     }
 
     @When("^Выбираем пункт Телевизоры \"(.*)\"$")
-    public void TVstep(String third){
-        submenuSteps.TV(third);
+    public void tvstep(String third){
+        submenuSteps.tv(third);
     }
     @Then("Выбираем параметры поиска и производителя для телевизора")
-    public void ParameterStep1(){
-        parametersSteps.TVParameters();
+    public void parameterStep1(){
+        parametersSteps.tvparameters();
     }
     @Then("На странице 12 элементов, запоминаем первое и вставляем в поисковую строку")
-    public void ParameterStep2(){
-        parametersSteps.TVValid();
+    public void parameterStep2(){
+        parametersSteps.tvvalid();
     }
 }

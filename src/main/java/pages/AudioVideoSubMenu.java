@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import steps.AudioVideoSubmenuSteps;
 
 public class AudioVideoSubMenu extends BaseClass {
 
@@ -20,7 +21,8 @@ public class AudioVideoSubMenu extends BaseClass {
          TVmenu.findElement(By.xpath("(//a[text() = '" + menuName3 + "'])[2]")).click();
      }
 
+
      public AudioVideoSubMenu(){
-        PageFactory.initElements(BaseClass.driver, this);
+        PageFactory.initElements(AudioVideoSubmenuSteps.getDriver(),this);
      }
 }

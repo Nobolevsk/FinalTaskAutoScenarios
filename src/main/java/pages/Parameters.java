@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import steps.ParametersSteps;
 
 
 public class Parameters extends BaseClass {
@@ -42,7 +43,7 @@ public class Parameters extends BaseClass {
 
 
     public Parameters (){
-        PageFactory.initElements(BaseClass.driver, this);
+        PageFactory.initElements(ParametersSteps.getDriver(), this);
     }
 
 }
